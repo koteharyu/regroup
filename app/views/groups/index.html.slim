@@ -1,0 +1,14 @@
+= link_to "groups", groups_path
+div
+  = link_to "members", "#"
+
+h1 グループ一覧
+
+table
+  thead
+    tr
+      th Name
+  tbody
+    = render @groups
+
+= link_to "New Member", new_group_path
