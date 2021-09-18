@@ -12,6 +12,7 @@ table
       th Name
       th Role
   tbody
+    = render partial: 'participating_member', collection: @participating_members
 
 = link_to "幹事を設定する", "#"
 
@@ -21,3 +22,5 @@ table
   thead
     tr
       th Name
+  tbody
+    = render partial: 'non_participating_member', collection: @non_participating_members

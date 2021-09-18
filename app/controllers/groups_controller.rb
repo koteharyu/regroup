@@ -19,7 +19,8 @@ class GroupsController < ApplicationController
   end
 
   def show
-
+    @participating_members = @group.participating_members
+    @non_participating_members = Member.all - @participating_members.to_a
   end
 
   def edit
