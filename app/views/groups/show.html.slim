@@ -1,0 +1,23 @@
+div
+  = link_to "groups", groups_path
+div
+  = link_to "members", "#"
+
+h2= "#{@group.name}のメンバー一覧"
+h4 グループに参加中のメンバー
+
+table
+  thead
+    tr
+      th Name
+      th Role
+  tbody
+
+= link_to "幹事を設定する", "#"
+
+h4 グループに未参加のメンバー
+
+table
+  thead
+    tr
+      th Name
