@@ -1,0 +1,15 @@
+= link_to "groups", groups_path
+div
+  = link_to "members", members_path
+
+h2 メンバー詳細
+
+table
+  thead
+    tr
+      th Name
+  tbody
+    tr
+      td= @member.name
+      td= link_to "Edit", edit_member_path(@member)
+      td= link_to "Destroy", member_path(@member), method: :delete
