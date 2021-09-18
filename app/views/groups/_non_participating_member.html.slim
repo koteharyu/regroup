@@ -1,3 +1,3 @@
 tr
   td= non_participating_member.name
-  td= link_to "参加", "#"
+  td= link_to "参加", group_participations_path(@group, member_id: non_participating_member.id), method: :post

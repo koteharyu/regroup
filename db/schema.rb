@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_09_18_021407) do
   create_table "participations", force: :cascade do |t|
     t.integer "group_id", null: false
     t.integer "member_id", null: false
-    t.integer "role"
+    t.integer "role", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["group_id", "member_id"], name: "index_participations_on_group_id_and_member_id", unique: true
