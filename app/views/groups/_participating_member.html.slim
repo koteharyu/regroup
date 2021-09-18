@@ -1,3 +1,4 @@
 tr
   td= participating_member.name
   td= participating_member.role(@group)
+  td= link_to "脱退", group_participations_path(@group, member_id: participating_member.id), method: :delete

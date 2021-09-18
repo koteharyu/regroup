@@ -9,4 +9,8 @@ class Member < ApplicationRecord
   def join(group)
     participating_groups << group
   end
+
+  def withdraw(group)
+    participating_groups.delete(group)
+  end
 end

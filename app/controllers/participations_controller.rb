@@ -6,6 +6,12 @@ class ParticipationsController < ApplicationController
     redirect_to @group, notice: 'グループに参加しました'
   end
 
+  def destroy
+    member = Member.find(params[:member_id])
+    member.withdraw(@group)
+    redirect_to @group, notice: 'グループから脱退させました'
+  end
+
   private
 
   def set_group
