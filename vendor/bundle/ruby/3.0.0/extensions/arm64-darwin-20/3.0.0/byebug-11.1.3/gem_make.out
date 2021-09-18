@@ -1,0 +1,19 @@
+current directory: /Users/haryu/prj/regroup/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+/Users/haryu/.rbenv/versions/3.0.0/bin/ruby -I /Users/haryu/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210918-25396-wfara4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/haryu/prj/regroup/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/haryu/prj/regroup/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/haryu/prj/regroup/vendor/bundle/ruby/3.0.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20210918-25396-3pj4f6/byebug
