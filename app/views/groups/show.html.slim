@@ -14,7 +14,7 @@ table
   tbody
     = render partial: 'participating_member', collection: @participating_members
 
-= link_to "幹事を設定する", "#"
+= link_to "幹事を設定する", group_roles_path(@group), method: :put
 
 h4 グループに未参加のメンバー
 
